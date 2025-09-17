@@ -10,6 +10,11 @@ for i in range(len(results)):
 
 print()
 
+cursor.execute("SELECT name, cost FROM tech WHERE category = 'Смартфон' AND cost > 50000")
+results = cursor.fetchall()
+for i in range(len(results)):
+    print(results[i][0],results[i][1])
+
 print()
 
 cursor.execute("SELECT name,cost FROM tech ORDER BY cost")
