@@ -7,9 +7,6 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS tech (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
-    category TEXT,
-    cost FLOAT,
-    amount INTEGER
 )
 ''')
 
