@@ -23,10 +23,7 @@ with open("Data.txt", 'r', encoding='UTF-8') as file:
 
 for line in lines:
     data = line.strip().split(", ")  # Разделение строки по запятым
-    cursor.execute(
-        "INSERT INTO tech (id, name, category, cost, amount) VALUES (?, ?, ?, ?, ?)",
-        (int(data[0]), data[1], data[2], float(data[3]), data[4])
-    )
+    file load ve4regrgerferscxs
 
 # Сохраняем изменения и закрываем соединение
 conn.commit()
